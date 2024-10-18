@@ -1,0 +1,117 @@
+/* General styling for the page */
+body {
+  font-family: "Arial", sans-serif;
+  background: linear-gradient(135deg, #f0f4f8, #e9ecef);
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Main container styles */
+.ui-ux-design-details {
+  background-color: #ffffff;
+  max-width: 900px;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.ui-ux-design-details:hover {
+  transform: translateY(-5px);
+}
+
+h1,
+h2 {
+  color: #333333;
+  margin-bottom: 15px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  color: #6c63ff;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #6c63ff;
+  padding-bottom: 10px;
+}
+
+h2 {
+  font-size: 1.8rem;
+  color: #495057;
+  margin-top: 25px;
+}
+
+p {
+  color: #555555;
+  line-height: 1.8;
+  margin: 10px 0;
+}
+
+ol,
+ul {
+  color: #444444;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+li {
+  margin: 8px 0;
+}
+
+a {
+  color: #6c63ff;
+  text-decoration: none;
+  border-bottom: 1px dashed #6c63ff;
+}
+
+a:hover {
+  text-decoration: none;
+  border-bottom: 1px solid #6c63ff;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .ui-ux-design-details {
+    padding: 30px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  p,
+  li {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 15px;
+  }
+
+  .ui-ux-design-details {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  p,
+  li {
+    font-size: 0.85rem;
+  }
+}
